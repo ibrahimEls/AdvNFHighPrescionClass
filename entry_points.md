@@ -147,6 +147,3 @@ python predict.py \
   Specifies the number of events to test if the `--predict_numevents` flag is not activated.
 
 ---
-
-This list of entrypoints provides a step-by-step guide to running each part of the code. Ensure that the directory paths and file structures match your local setup before executing the commands.
-```
