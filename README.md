@@ -1,4 +1,3 @@
-```markdown
 # HEP-Challenge README
 
 This document describes the hardware setup, software dependencies, installation steps, and instructions for training, evaluating, and predicting with the HEP-Challenge models. Please read carefully to ensure the correct environment and file structure.
