@@ -1,4 +1,4 @@
-# Entrypoints for Running HEP-Challenge Code
+# Entrypoints for Adversarial Normalizing Flows for High Precision Classification
 
 This document lists the commands required to execute the various steps of the HEP-Challenge pipeline along with explicit explanations for each argument.
 
