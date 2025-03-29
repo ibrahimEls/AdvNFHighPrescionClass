@@ -1,6 +1,7 @@
 # Adversarial Normalizing Flows for High Precision Classification
-## Solution to the FAIR UNIVERSE - Higgs Uncertainty Challenge
-## Author: Ibrahim Elsharkawy
+Solution to the FAIR UNIVERSE - Higgs Uncertainty Challenge
+## Author: 
+Ibrahim Elsharkawy ie4@illinois.edu
 
 This document describes the hardware setup, software dependencies, installation steps, and instructions for training, evaluating, and predicting with the HEP-Challenge models. Please read carefully to ensure the correct environment and file structure.
 
