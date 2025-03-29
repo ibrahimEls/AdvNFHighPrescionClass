@@ -1,9 +1,9 @@
 # Adversarial Normalizing Flows for High Precision Classification
 Solution to the FAIR UNIVERSE - Higgs Uncertainty Challenge
-## Author: 
+## Author(s): 
 Ibrahim Elsharkawy ie4@illinois.edu
 
-# Solution Detials
+# How to run the solution 
 This document describes the hardware setup, software dependencies, installation steps, and instructions for training, evaluating, and predicting with the HEP-Challenge models. Please read carefully to ensure the correct environment and file structure.
 
 ---
@@ -22,7 +22,7 @@ This document describes the hardware setup, software dependencies, installation 
 
 ---
 
-## 2. Operating System / Platform
+## 2. Operating System / Platform used
 - **OS:** macOS Sonoma 14.1
 
 ---
@@ -33,7 +33,6 @@ This document describes the hardware setup, software dependencies, installation 
 - **Python:** (Ensure you are using a compatible version, e.g., Python 3.8+)
 - **pip:** For installing Python dependencies
 - **3rd-Party Libraries:** Listed in `requirements.txt`  
-- **Docker:** (Optional, see Docker section below)
 
 ### 3.2 Installation Steps
 
@@ -188,10 +187,7 @@ python predict.py \
 ## 5. Important Side Effects
 
 - **Directory Structure:**  
-  - Models are saved in `Test/lighting_logs`. The subsequent processing steps will fail if the directory structure is not maintained or if the paths are incorrect.
-  
-- **Data Overwrite:**  
-  - The data processing scripts may overwrite original data if not handled with care. Always ensure backups if necessary.
+  - Models are saved in `Test/lighting_logs`. The subsequent processing steps will fail if the directory structure is not changed or if the paths are incorrect.
 
 ---
 
@@ -204,32 +200,4 @@ python predict.py \
 
 ---
 
-## 7. Docker (Optional)
-
-A Dockerfile is provided for setting up the environment easily. This can be used as an alternative to manual dependency installation.
-
-**Dockerfile:**
-
-```dockerfile
-FROM python:3.8-slim
-WORKDIR /app
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
-COPY . .
-CMD ["bash"]
-```
-
-**Usage:**
-
-```bash
-# Build the Docker image
-docker build -t hep-challenge .
-
-# Run the container
-docker run -it hep-challenge
-```
-
----
-
-This README provides a concise yet detailed guide to setting up the hardware/software environment, installing dependencies, and executing the model training, evaluation, and prediction steps. Please ensure that all paths are adjusted according to your local setup.
 ```
