@@ -1,4 +1,3 @@
-```markdown
 # Entrypoints for Running HEP-Challenge Code
 
 This document lists the commands required to execute the various steps of the HEP-Challenge pipeline along with explicit explanations for each argument.
